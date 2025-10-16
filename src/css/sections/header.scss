@@ -35,6 +35,15 @@
             background-color: rgba(255, 255, 255, 0.1);
         }
 
+        a {
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+            line-height: 23px;
+            font-weight: 500;
+            text-align: left;
+            text-decoration: none;
+        }
+
         >a {
             display: flex;
             align-items: center;
