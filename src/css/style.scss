@@ -18,12 +18,6 @@
     --secondary-color-black: #212529;
 }
 
-.container {
-    max-width: 1344px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .bg {
     width: 100%;
     background-color: var(--primary-color-darkBlue);
@@ -99,4 +93,36 @@ h5 {
 
 .text-bold {
     font-weight: 700;
+}
+
+.container {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
 }
