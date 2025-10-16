@@ -1,115 +1,122 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @import url("./sections/header.scss");
 
-*{
+* {
     margin: 0;
     padding: 0;
 
     font-family: "Inter", sans-serif;
 }
 
-:root{
+:root {
     --primary-color-darkBlue: #043873;
-    --primary-color-lightBlue: #4F9CF9;
+    --primary-color-lightBlue: #4f9cf9;
 
-    --secondary-color-gold: #FFE492;
-    --secondary-color-skyBlue: #A7CEFC;
-    --secondary-color-white: #FFFFFF;
+    --secondary-color-gold: #ffe492;
+    --secondary-color-skyBlue: #a7cefc;
+    --secondary-color-white: #ffffff;
     --secondary-color-black: #212529;
 }
 
-.container{
+.container {
     max-width: 1344px;
     width: 100%;
     margin: 0 auto;
 }
 
-.bg{
+.bg {
     width: 100%;
     background-color: var(--primary-color-darkBlue);
 }
 
-h1{
+h1 {
     font-size: 72px;
     line-height: auto;
     font-weight: 700;
-    letter-spacing: -144px;
+    letter-spacing: -1.44px;
+    color: var(--secondary-color-white);
 }
-h2{
+
+h2 {
     font-size: 64px;
     line-height: auto;
     font-weight: 700;
-    letter-spacing: -1.28px;;
+    letter-spacing: -1.28px;
 }
-h3{
+
+h3 {
     font-size: 54px;
     line-height: auto;
     font-weight: 700;
     letter-spacing: -1.08px;
 }
-h4{
+
+h4 {
     font-size: 36px;
     line-height: auto;
     font-weight: 700;
     letter-spacing: -0.72px;
 }
-h5{
+
+h5 {
     font-size: 28px;
     line-height: auto;
     font-weight: 700;
     letter-spacing: -0.56px;
 }
 
-.p1-semibold{
+.p1-semibold {
     font-size: 24px;
     line-height: 36px;
     font-weight: 600;
 }
 
-.p1-regular{
+.p1-regular {
     font-size: 24px;
     line-height: 32px;
     font-weight: 400;
     letter-spacing: -0.48px;
 }
 
-.p2-bold{
+.p2-bold {
     font-size: 18px;
     line-height: auto;
     font-weight: 700;
     letter-spacing: -0.36px;
 }
 
-.p2-medium{
+.p2-medium {
     font-size: 18px;
     line-height: 23px;
     letter-spacing: -0.36px;
     font-weight: 500;
 }
 
-.p2-regular{
+.p2-regular {
     font-size: 18px;
     line-height: 30px;
     letter-spacing: -0.36px;
     font-weight: 400;
 }
 
-.p3-medium{
+.p3-medium {
     font-size: 16px;
     line-height: auto;
     font-weight: 500;
     letter-spacing: -0.32%;
 }
-.header{
-    &__item{
-    a{
-    font-family: "DM Sans", sans-serif;
-    font-size: 18px;
-    line-height: 23px;
-    font-weight: 500;
-    text-align: left;
-    text-decoration: none;
+
+.header {
+    &__item {
+        a {
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+            line-height: 23px;
+            font-weight: 500;
+            text-align: left;
+            text-decoration: none;
+        }
     }
-}}
+}
