@@ -6,14 +6,12 @@
 * {
     margin: 0;
     padding: 0;
-
     font-family: "Inter", sans-serif;
 }
 
 :root {
     --primary-color-darkBlue: #043873;
     --primary-color-lightBlue: #4f9cf9;
-
     --secondary-color-gold: #ffe492;
     --secondary-color-skyBlue: #a7cefc;
     --secondary-color-white: #ffffff;
@@ -67,45 +65,40 @@ h5 {
     letter-spacing: -0.56px;
 }
 
-.p1-semibold {
+.text-xl {
     font-size: 24px;
     line-height: 36px;
+}
+
+.text-lg {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.text-md {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-sm {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-regular {
+    font-weight: 400;
+}
+
+.text-medium {
+    font-weight: 500;
+}
+
+.text-semibold {
     font-weight: 600;
 }
 
-.p1-regular {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 400;
-    letter-spacing: -0.48px;
-}
-
-.p2-bold {
-    font-size: 18px;
-    line-height: auto;
+.text-bold {
     font-weight: 700;
-    letter-spacing: -0.36px;
-}
-
-.p2-medium {
-    font-size: 18px;
-    line-height: 23px;
-    letter-spacing: -0.36px;
-    font-weight: 500;
-}
-
-.p2-regular {
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: -0.36px;
-    font-weight: 400;
-}
-
-.p3-medium {
-    font-size: 16px;
-    line-height: auto;
-    font-weight: 500;
-    letter-spacing: -0.32%;
 }
 
 .header {
