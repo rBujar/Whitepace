@@ -1,12 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Whitepace</title>
-  </head>
-  <body>
-    
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/css/style.scss" />
+  <title>Whitepace</title>
+</head>
+
+<body>
+  <div class="bg">
+    <header class="header container">
+      <div class="header__logo">
+        <img src="src/assets/whitespace.png" alt="whitespace logo" />
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item">
+            <a href="#" class="text-lg text-medium">Products
+              <img src="/src/assets/small-arrow-down.png" alt="arrow down" /></a>
+            <ul class="header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="text-md text-regular">Product 1</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="text-md text-regular">Product 2</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="text-md text-regular">Product 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__item">
+            <a href="#" class="text-lg text-medium">Solutions
+              <img src="/src/assets/small-arrow-down.png" alt="arrow down" /></a>
+            <ul class="header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="text-md text-regular">Solution 1</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="text-md text-regular">Solution 2</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="text-md text-regular">Solution 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__item">
+            <a href="#" class="text-lg text-medium">Resources
+              <img src="/src/assets/small-arrow-down.png" alt="arrow down" /></a>
+            <ul class="header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="text-md text-regular">Resource 1</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="text-md text-regular">Resource 2</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="text-md text-regular">Resource 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__item">
+            <a href="#" class="text-lg text-medium">Pricing
+              <img src="/src/assets/small-arrow-down.png" alt="arrow down" /></a>
+            <ul class="header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="text-md text-regular">Pricing 1</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="text-md text-regular">Pricing 2</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="text-md text-regular">Pricing 3</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="header__buttons">
+          <button class="header__buttons--login">
+            <p class="text-lg text-medium">Login</p>
+          </button>
+          <button class="header__buttons--free-trial">
+            <p class="text-lg text-medium">Try Whitespace Free</p>
+            <img src="/src/assets/white-right-arrow.png" alt="white right arrow" />
+          </button>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <main>
+    <div class="bg">
+      <section class="hero container"></section>
+    </div>
+  </main>
+  <footer></footer>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
 </html>
