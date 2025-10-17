@@ -97,15 +97,11 @@
         justify-content: center;
         gap: 24px;
 
-        &--login,
-        &--free-trial {
+        &--login {
             border: 0;
             outline: 0;
             border-radius: 8px;
-        }
-
-        &--login {
-            max-width: 126px;
+            max-width: 130px;
             padding: 16px 40px;
             background-color: var(--secondary-color-gold);
             color: var(--primary-color-darkBlue);
@@ -114,24 +110,8 @@
         &--free-trial {
             max-width: 227px;
             padding: 16px 24px;
-            background-color: var(--primary-color-lightBlue);
-            color: var(--secondary-color-white);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            p {
-                white-space: nowrap;
-            }
-
-            img {
-                width: 10px;
-                height: 10px;
-            }
         }
     }
 }
 
-@media (max-width: 1440px){
-
-}
+@media (max-width: 1440px) {}
