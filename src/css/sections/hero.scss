@@ -1,0 +1,30 @@
+.hero {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    width: 100%;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__button {
+        max-width: 220px;
+        padding: 20px 20px;
+    }
+}
+
+.overlay {
+    background-image: url(/src/assets/background-waves.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
