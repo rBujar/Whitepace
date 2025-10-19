@@ -28,3 +28,37 @@
     background-position: center;
     background-size: contain;
 }
+
+@media (min-width: 768px) {
+    .hero {
+        &__content{
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        &__title{
+            text-align: center;
+
+            h2{
+                font-size: 54px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .hero {
+        &__content{
+            align-items: start;
+            margin-bottom: 0px;
+        }
+
+        &__title{
+            text-align: start;
+
+            h2{
+                font-size: 64px;
+            }
+        }
+    }
+}

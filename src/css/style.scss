@@ -10,6 +10,10 @@
     color: var(--secondary-color-white);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 :root {
     --primary-color-darkBlue: #043873;
     --primary-color-lightBlue: #4f9cf9;
