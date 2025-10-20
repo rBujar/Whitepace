@@ -23,6 +23,14 @@
     --secondary-color-black: #212529;
 }
 
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
 .bg {
     width: 100%;
     background-color: var(--primary-color-darkBlue);
