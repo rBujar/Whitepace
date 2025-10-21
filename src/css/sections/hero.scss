@@ -1,0 +1,72 @@
+.hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+
+        h2 {
+            font-size: 36px;
+        }
+    }
+
+    &__button {
+        max-width: 220px;
+        padding: 20px 20px;
+    }
+}
+
+.overlay {
+    background-image: url(/src/assets/background-waves.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding-top: 140px;
+        padding-bottom: 140px;
+
+        &__title {
+            h2 {
+                font-size: 54px;
+            }
+        }
+
+        &__content {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .hero {
+        &__content {
+            align-items: start;
+            margin-bottom: 0px;
+        }
+
+        &__title {
+            text-align: start;
+
+            h2 {
+                font-size: 64px;
+            }
+        }
+    }
+}

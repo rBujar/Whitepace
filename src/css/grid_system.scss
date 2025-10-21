@@ -1,0 +1,44 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .col {
+        flex: 1;
+    }
+
+    @for $size from 1 through 12 {
+        .col-#{$size} {
+            width: calc($size / 12 * 100%);
+        }
+    }
+}
+
+@mixin grid-system($device) {
+    .row {
+        .col-#{$device} {
+            flex: 1;
+        }
+
+        @for $size from 1 through 12 {
+            .col-#{$device}-#{$size} {
+                width: calc($size / 12 * 100%);
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    @include grid-system("sm");
+}
+
+@media (min-width: 768px) {
+    @include grid-system("md");
+}
+
+@media (min-width: 992px) {
+    @include grid-system("lg");
+}
+
+@media (min-width: 1200px) {
+    @include grid-system("xl");
+}

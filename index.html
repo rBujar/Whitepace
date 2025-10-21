@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/css/style.scss" />
-    <link rel="shortcut icon" type="image/x-icon" href="/src/assets/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/src/assets/favicon.ico"
+    />
     <title>Whitepace</title>
   </head>
 
@@ -89,7 +93,7 @@
             <button class="header__buttons--login">
               <p class="text-lg text-medium">Login</p>
             </button>
-            <button class="header__buttons--free-trial">
+            <button class="header__buttons--free-trial button-blue">
               <p class="text-lg text-medium">Try Whitespace Free</p>
               <img
                 src="/src/assets/white-right-arrow.png"
@@ -97,16 +101,49 @@
               />
             </button>
           </div>
+
+          <div class="header__hamburger">
+            <span
+              class="header__hamburger--bar header__hamburger--bar--top"
+            ></span>
+            <span
+              class="header__hamburger--bar header__hamburger--bar--middle"
+            ></span>
+            <span
+              class="header__hamburger--bar header__hamburger--bar--bottom"
+            ></span>
+          </div>
         </nav>
       </header>
     </div>
     <main>
-      <div class="bg">
-        <section class="hero container"></section>
+      <div class="bg overlay">
+        <section class="hero container">
+          <div class="row">
+            <div class="hero__content col-12 col-md-12 col-lg-6 col-xl-5">
+              <div class="hero__title">
+                <h2>Get more done with whitepace</h2>
+                <p class="text-lg text-regular">
+                  Project management software that enables your teams to
+                  collaborate, plan, analyze and manage everyday tasks
+                </p>
+              </div>
+              <button class="hero__button button-blue">
+                <p class="text-lg text-medium">Try Whitespace Free</p>
+                <img
+                  src="/src/assets/white-right-arrow.png"
+                  alt="white right arrow"
+                />
+              </button>
+            </div>
+            <div class="hero__image col-12 col-md-12 col-lg-6 col-xl-7">
+              <img src="./src/assets/hero.jpeg" alt="hero" />
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
