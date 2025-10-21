@@ -23,12 +23,16 @@
     --secondary-color-black: #212529;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
+}
+
+body.no-scroll {
+    overflow: hidden;
 }
 
 .bg {
@@ -156,6 +160,6 @@ h5 {
 
 @media (min-width: 1400px) {
     .container {
-        max-width: 1320px; //1480px;
+        max-width: 1320px;
     }
 }
