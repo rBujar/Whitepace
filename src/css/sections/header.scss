@@ -204,7 +204,7 @@
         &__hamburger {
             display: none;
         }
-
+        
         &__menu {
             position: static;
             flex-direction: row;
@@ -213,6 +213,8 @@
             height: initial;
             width: 100%;
             padding-top: 0px;
+            top: unset;
+            transform: none;
         }
 
         &__item {
