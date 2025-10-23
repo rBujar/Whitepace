@@ -4,6 +4,7 @@
 @import url("./reset.css");
 @import url("./sections/header.scss");
 @import url("./sections/hero.scss");
+@import url("./sections/management.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -115,6 +116,7 @@ h5 {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: background-color 0.2s ease-in-out;
 
     p {
         white-space: nowrap;
@@ -123,6 +125,15 @@ h5 {
     img {
         width: 10px;
         height: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover{
+        background-color: #80b8fb;
+
+        img{
+            transform: translateX(4px);
+        }
     }
 }
 
