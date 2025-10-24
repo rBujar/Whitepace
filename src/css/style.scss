@@ -117,15 +117,18 @@ h5 {
     align-items: center;
     gap: 10px;
     transition: background-color 0.2s ease-in-out;
+    padding: 20px 40px;
+    max-width: 200px;
+    justify-content: center;
 
     p {
         white-space: nowrap;
     }
 
     img {
-        width: 10px;
-        height: 10px;
         transition: transform 0.3s ease-in-out;
+        width: 14px;
+        height: 14px;
     }
 
     &:hover{
@@ -135,6 +138,44 @@ h5 {
             transform: translateX(4px);
         }
     }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 60px;
+        color: var(--secondary-color-white);
+
+        h1{
+            font-size: 36px;
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+        p{
+            padding: 10px;
+        }
+    }
+}
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .container {
@@ -155,17 +196,64 @@ h5 {
     .container {
         max-width: 720px;
     }
+    .content{
+        margin-bottom: 100px;
+        &__title{
+            h1{
+                font-size: 54px;
+            }
+            p{
+                padding: 0px;
+            }
+        }
+    }
+    section{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
     }
+
+    .content{
+        align-items: start;
+        justify-content: center;
+        margin-bottom: 0px;
+
+        &__title{
+            justify-content: left;
+
+            h1{
+                font-size: 64px;
+            }
+
+            h1,p{
+                text-align: left;
+            }
+        }
+    }
+    .button-blue{
+        max-width: 220px;
+    }
+    section{
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
 }
 
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
+    }
+    .content{
+        &__title{
+            h1{
+                font-size: 72px;
+            }
+        }
     }
 }
 
