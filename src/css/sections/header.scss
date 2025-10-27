@@ -1,7 +1,9 @@
 .header {
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
+    padding-top: 20px;
+
+    .row {
+        justify-content: space-between;
+    }
 
     &__logo {
         width: 134px;
@@ -189,6 +191,11 @@
                 padding: 15px 40px;
                 background-color: var(--secondary-color-gold);
                 color: var(--primary-color-darkBlue);
+                transition: background-color 0.2s ease-in-out;
+
+                &:hover {
+                    background-color: #fff1c5;
+                }
             }
 
             &--free-trial {
@@ -204,7 +211,7 @@
         &__hamburger {
             display: none;
         }
-        
+
         &__menu {
             position: static;
             flex-direction: row;
