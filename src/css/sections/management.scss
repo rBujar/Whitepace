@@ -17,10 +17,6 @@
 @media (min-width: 992px) {
     .management {
         &__item:nth-child(2) {
-            .row {
-                justify-content: space-between;
-            }
-
             .content {
                 order: 2;
             }
