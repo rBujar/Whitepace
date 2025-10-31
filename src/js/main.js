@@ -10,28 +10,21 @@ hamburger.addEventListener("click", () => {
 });
 
 const swiper = new Swiper(".swiper", {
-  direction: "horizontal",
   spaceBetween: 32,
   initialSlide: 1,
   centeredSlides: true,
-  slidesPerView: 1,
-  loop: true,
-
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: true,
-  },
-
   breakpoints: {
+    0: {
+      loop: true,
+      slidesPerView: 1,
+    },
     768: {
       slidesPerView: 1.5,
-      loop: false,
     },
     992: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       centeredSlides: false,
-      loop: false,
     },
   },
 });
