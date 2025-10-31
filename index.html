@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/src/css/style.scss" />
   <link rel="shortcut icon" type="image/x-icon" href="/src/assets/favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <title>Whitepace</title>
 </head>
 
@@ -13,89 +14,89 @@
   <div class="default-bg">
     <header class="header container">
       <div class="row">
-      <div class="header__logo">
-        <img src="src/assets/whitespace.png" alt="whitespace logo" />
+        <div class="header__logo">
+          <img src="src/assets/whitespace.png" alt="whitespace logo" />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a href="#" class="text-lg text-medium">Products
+                <img src="/src/assets/small-arrow-down.png" alt="arrow down" /></a>
+              <ul class="header__submenu">
+                <li class="header__submenu-item">
+                  <a href="#" class="text-md text-regular">Product 1</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="text-md text-regular">Product 2</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="text-md text-regular">Product 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item">
+              <a href="#" class="text-lg text-medium">Solutions
+                <img src="/src/assets/small-arrow-down.png" alt="arrow down" /></a>
+              <ul class="header__submenu">
+                <li class="header__submenu-item">
+                  <a href="#" class="text-md text-regular">Solution 1</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="text-md text-regular">Solution 2</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="text-md text-regular">Solution 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item">
+              <a href="#" class="text-lg text-medium">Resources
+                <img src="/src/assets/small-arrow-down.png" alt="arrow down" /></a>
+              <ul class="header__submenu">
+                <li class="header__submenu-item">
+                  <a href="#" class="text-md text-regular">Resource 1</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="text-md text-regular">Resource 2</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="text-md text-regular">Resource 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item">
+              <a href="#" class="text-lg text-medium">Pricing
+                <img src="/src/assets/small-arrow-down.png" alt="arrow down" /></a>
+              <ul class="header__submenu">
+                <li class="header__submenu-item">
+                  <a href="#" class="text-md text-regular">Pricing 1</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="text-md text-regular">Pricing 2</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="#" class="text-md text-regular">Pricing 3</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="header__buttons">
+            <button class="header__buttons--login">
+              <p class="text-lg text-medium">Login</p>
+            </button>
+            <button class="header__buttons--free-trial button-blue">
+              <p class="text-lg text-medium">Try Whitespace Free</p>
+              <img src="/src/assets/white-right-arrow.png" alt="white right arrow" />
+            </button>
+          </div>
+          <div class="header__hamburger">
+            <span class="header__hamburger--bar header__hamburger--bar--top"></span>
+            <span class="header__hamburger--bar header__hamburger--bar--middle"></span>
+            <span class="header__hamburger--bar header__hamburger--bar--bottom"></span>
+          </div>
       </div>
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="header__item">
-            <a href="#" class="text-lg text-medium">Products
-              <img src="/src/assets/small-arrow-down.png" alt="arrow down" /></a>
-            <ul class="header__submenu">
-              <li class="header__submenu-item">
-                <a href="#" class="text-md text-regular">Product 1</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="#" class="text-md text-regular">Product 2</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="#" class="text-md text-regular">Product 3</a>
-              </li>
-            </ul>
-          </li>
-          <li class="header__item">
-            <a href="#" class="text-lg text-medium">Solutions
-              <img src="/src/assets/small-arrow-down.png" alt="arrow down" /></a>
-            <ul class="header__submenu">
-              <li class="header__submenu-item">
-                <a href="#" class="text-md text-regular">Solution 1</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="#" class="text-md text-regular">Solution 2</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="#" class="text-md text-regular">Solution 3</a>
-              </li>
-            </ul>
-          </li>
-          <li class="header__item">
-            <a href="#" class="text-lg text-medium">Resources
-              <img src="/src/assets/small-arrow-down.png" alt="arrow down" /></a>
-            <ul class="header__submenu">
-              <li class="header__submenu-item">
-                <a href="#" class="text-md text-regular">Resource 1</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="#" class="text-md text-regular">Resource 2</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="#" class="text-md text-regular">Resource 3</a>
-              </li>
-            </ul>
-          </li>
-          <li class="header__item">
-            <a href="#" class="text-lg text-medium">Pricing
-              <img src="/src/assets/small-arrow-down.png" alt="arrow down" /></a>
-            <ul class="header__submenu">
-              <li class="header__submenu-item">
-                <a href="#" class="text-md text-regular">Pricing 1</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="#" class="text-md text-regular">Pricing 2</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="#" class="text-md text-regular">Pricing 3</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div class="header__buttons">
-          <button class="header__buttons--login">
-            <p class="text-lg text-medium">Login</p>
-          </button>
-          <button class="header__buttons--free-trial button-blue">
-            <p class="text-lg text-medium">Try Whitespace Free</p>
-            <img src="/src/assets/white-right-arrow.png" alt="white right arrow" />
-          </button>
-        </div>
-        <div class="header__hamburger">
-          <span class="header__hamburger--bar header__hamburger--bar--top"></span>
-          <span class="header__hamburger--bar header__hamburger--bar--middle"></span>
-          <span class="header__hamburger--bar header__hamburger--bar--bottom"></span>
-        </div>
- </div>
       </nav>
- 
+
     </header>
   </div>
   <main>
@@ -168,12 +169,13 @@
           <div class="content col-12 col-md-12 col-lg-7 col-xl-6">
             <div class="content__title">
               <h1>Use as Extension</h1>
-              <p class="text-lg text-regular">Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
+              <p class="text-lg text-regular">Customise the app with plugins, custom themes and multiple text editors
+                (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
             </div>
             <button class="button-blue">
               <p class="text-lg text-regular">Let's Go</p> <img src="./src/assets/white-right-arrow.png"
-                alt="arrow right"> 
-              </button>
+                alt="arrow right">
+            </button>
           </div>
           <div class="image col-11 col-md-12 col-lg-5 col-xl-6">
             <img src="./src/assets/puzzle.png" alt="puzzle img">
@@ -183,20 +185,120 @@
     </div>
     <section class="customise container">
       <div class="row">
-      <div class="customise__image image col-10 col-md-11 col-lg-5 col-xl-6">
-        <img src="./src/assets/settings.png" alt="settings img">
-      </div>
-      <div class="customise__content content col-12 col-md-12 col-lg-6 col-xl-5 offset-xl-1">
-        <div class="content__title">
-          <h1>Costumise it to your needs</h1>
-          <p class="text-lg text-regular">Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
+        <div class="customise__image image col-10 col-md-11 col-lg-5 col-xl-6">
+          <img src="./src/assets/settings.png" alt="settings img">
         </div>
-        <button class="button-blue">
-          <p class="text-lg text-regular">Let's Go</p> <img src="./src/assets/white-right-arrow.png"
-            alt="arrow right"> 
+        <div class="customise__content content col-12 col-md-12 col-lg-6 col-xl-5 offset-xl-1">
+          <div class="content__title">
+            <h1>Costumise it to your needs</h1>
+            <p class="text-lg text-regular">Customise the app with plugins, custom themes and multiple text editors
+              (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
+          </div>
+          <button class="button-blue">
+            <p class="text-lg text-regular">Let's Go</p> <img src="./src/assets/white-right-arrow.png"
+              alt="arrow right">
           </button>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="plan container">
+      <div class="row">
+        <div class="plan__title col-12">
+          <h1>Choose Your Plan</h1>
+          <p class="text-lg text-regular">Whether you want to get organized, keep your personal life on track, or boost
+            workplace productivity, Evernote has the right plan for you.</p>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--2">
+              <p class="text-xl text-semibold">Organization</p>
+              <h1>$49.99</h1>
+              <p class="text-md text-regular">Capture ideas and find them quickly</p>
+              <ul class="swiper__features">
+                <li> <img src="/src/assets/black-list-icon.png" alt="black list icon">
+                  <p class="text-md text-medium">Sync unlimited devices</p>
+                </li>
+                <li> <img src="/src/assets/black-list-icon.png" alt="black list icon">
+                  <p class="text-md text-medium">10 GB monthly uploads</p>
+                </li>
+                <li> <img src="/src/assets/black-list-icon.png" alt="black list icon">
+                  <p class="text-md text-medium">200 MB max. note size</p>
+                </li>
+                <li> <img src="/src/assets/black-list-icon.png" alt="black list icon">
+                  <p class="text-md text-medium">Customize Home dashboard and access extra widgets</p>
+                </li>
+                <li> <img src="/src/assets/black-list-icon.png" alt="black list icon">
+                  <p class="text-md text-medium">Connect primary Google Calendar account</p>
+                </li>
+                <li> <img src="/src/assets/black-list-icon.png" alt="black list icon">
+                  <p class="text-md text-medium">Add due dates, reminders, and notifications to your tasks</p>
+                </li>
+              </ul>
+              <button class="button-blue">
+                <p class="text-md text-medium">Get Started</p>
+              </button>
+            </div>
+            <div class="swiper-slide swiper-slide--1">
+              <p class="text-xl text-semibold">Personal</p>
+              <h1>$11.99</h1>
+              <p class="text-md text-regular">Keep home and family on track</p>
+              <ul class="swiper__features">
+                <li> <img src="/src/assets/list-icon.png" alt="list icon">
+                  <p class="text-md text-medium">Sync unlimited devices</p>
+                </li>
+                <li> <img src="/src/assets/list-icon.png" alt="list icon">
+                  <p class="text-md text-medium">10 GB monthly uploads</p>
+                </li>
+                <li> <img src="/src/assets/list-icon.png" alt="list icon">
+                  <p class="text-md text-medium">200 MB max. note size</p>
+                </li>
+                <li> <img src="/src/assets/list-icon.png" alt="list icon">
+                  <p class="text-md text-medium">Customize Home dashboard and access extra widgets</p>
+                </li>
+                <li> <img src="/src/assets/list-icon.png" alt="list icon">
+                  <p class="text-md text-medium">Connect primary Google Calendar account</p>
+                </li>
+                <li> <img src="/src/assets/list-icon.png" alt="list icon">
+                  <p class="text-md text-medium">Add due dates, reminders, and notifications to your tasks</p>
+                </li>
+              </ul>
+              <button class="button-blue">
+                <p class="text-md text-regular">Get Started</p>
+              </button>
+            </div>
+            <div class="swiper-slide swiper-slide--2">
+              <p class="text-xl text-semibold">Free</p>
+              <h1>$0</h1>
+              <p class="text-md text-regular">Capture ideas and find them quickly</p>
+              <ul class="swiper__features">
+                <li> <img src="/src/assets/black-list-icon.png" alt="black list icon">
+                  <p class="text-md text-medium">Sync unlimited devices</p>
+                </li>
+                <li> <img src="/src/assets/black-list-icon.png" alt="black list icon">
+                  <p class="text-md text-medium">10 GB monthly uploads</p>
+                </li>
+                <li> <img src="/src/assets/black-list-icon.png" alt="black list icon">
+                  <p class="text-md text-medium">200 MB max. note size</p>
+                </li>
+                <li> <img src="/src/assets/black-list-icon.png" alt="black list icon">
+                  <p class="text-md text-medium">Customize Home dashboard and access extra widgets</p>
+                </li>
+                <li> <img src="/src/assets/black-list-icon.png" alt="black list icon">
+                  <p class="text-md text-medium">Connect primary Google Calendar account</p>
+                </li>
+                <li> <img src="/src/assets/black-list-icon.png" alt="black list icon">
+                  <p class="text-md text-medium">Add due dates, reminders, and notifications to your tasks</p>
+                </li>
+              </ul>
+              <button class="button-blue">
+                <p class="text-md text-medium">Get Started</p>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
     </section>
   </main>
   <footer></footer>
