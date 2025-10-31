@@ -5,6 +5,7 @@
 @import url("./sections/header.scss");
 @import url("./sections/hero.scss");
 @import url("./sections/management.scss");
+@import url("./sections/customise.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -36,13 +37,12 @@ body.no-scroll {
     overflow: hidden;
 }
 
-.bg {
-    width: 100%;
+.default-bg {
     background-color: var(--primary-color-darkBlue);
 }
 
 h1 {
-    font-size: 72px;
+    font-size: 36px;
     line-height: auto;
     font-weight: 700;
 }
@@ -131,22 +131,22 @@ h5 {
         height: 14px;
     }
 
-    &:hover{
+    &:hover {
         background-color: #80b8fb;
 
-        img{
+        img {
             transform: translateX(4px);
         }
     }
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
 
-    &__title{
+    &__title {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -154,7 +154,7 @@ h5 {
         margin-bottom: 60px;
         color: var(--secondary-color-white);
 
-        h1{
+        h1 {
             font-size: 36px;
         }
 
@@ -162,18 +162,23 @@ h5 {
         p {
             text-align: center;
         }
-        p{
+
+        p {
             padding: 10px;
         }
     }
 }
+
 .image {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
 }
-section{
+
+
+
+section {
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -196,18 +201,22 @@ section{
     .container {
         max-width: 720px;
     }
-    .content{
+
+    .content {
         margin-bottom: 100px;
-        &__title{
-            h1{
-                font-size: 54px;
-            }
-            p{
+
+        h1 {
+            font-size: 54px;
+        }
+
+        &__title {
+            p {
                 padding: 0px;
             }
         }
     }
-    section{
+
+    section {
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -218,27 +227,30 @@ section{
         max-width: 960px;
     }
 
-    .content{
+    .content {
         align-items: start;
         justify-content: center;
         margin-bottom: 0px;
 
-        &__title{
+        h1 {
+            font-size: 64px;
+        }
+
+        &__title {
             justify-content: left;
 
-            h1{
-                font-size: 64px;
-            }
-
-            h1,p{
+            h1,
+            p {
                 text-align: left;
             }
         }
     }
-    .button-blue{
+
+    .button-blue {
         max-width: 220px;
     }
-    section{
+
+    section {
         padding-top: 140px;
         padding-bottom: 140px;
     }
@@ -248,12 +260,9 @@ section{
     .container {
         max-width: 1140px;
     }
-    .content{
-        &__title{
-            h1{
-                font-size: 72px;
-            }
-        }
+
+    h1 {
+        font-size: 72px;
     }
 }
 
