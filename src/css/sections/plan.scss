@@ -41,11 +41,14 @@
             h1 {
                 font-size: 36px;
             }
+            i{
+                font-size: 18px;
+            }
 
             &--1 {
                 background-color: var(--primary-color-darkBlue);
 
-                h1 {
+                h1, i {
                     color: var(--secondary-color-gold);
                 }
             }
@@ -72,7 +75,7 @@
                 }
 
                 h1,
-                p {
+                p,i {
                     color: var(--secondary-color-black);
                 }
             }
