@@ -13,6 +13,7 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 32,
   initialSlide: 1,
   centeredSlides: true,
+  autoHeight: true,
   breakpoints: {
     0: {
       loop: true,
