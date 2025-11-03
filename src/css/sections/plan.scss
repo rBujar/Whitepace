@@ -32,51 +32,60 @@
             outline: none;
             border-radius: 10px;
             overflow: hidden;
+            background-color: transparent;
+            border: 1px solid var(--secondary-color-gold);
 
             button {
                 max-width: 165px;
                 max-height: 62px;
+                background-color: transparent;
+                border: 1px solid var(--secondary-color-gold);
+                outline: none;
+                transition: background-color 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: var(--secondary-color-black);
+                    border: none;
+
+                    p {
+                        color: white;
+                    }
+                }
+            }
+
+            h1,
+            p,
+            i {
+                color: var(--secondary-color-black);
             }
 
             h1 {
                 font-size: 36px;
             }
-            i{
+
+            i {
                 font-size: 18px;
             }
 
             &--1 {
                 background-color: var(--primary-color-darkBlue);
 
-                h1, i {
+                h1,
+                i {
                     color: var(--secondary-color-gold);
                 }
-            }
 
-            &--2 {
-                background-color: transparent;
-                outline: none;
-                border: 1px solid var(--secondary-color-gold);
-
-                button {
-                    background-color: transparent;
-                    border: 1px solid var(--secondary-color-gold);
-                    outline: none;
-                    transition: background-color 0.3s ease-in-out;
-
-                    &:hover {
-                        background-color: var(--secondary-color-black);
-                        border: none;
-
-                        p {
-                            color: white;
-                        }
-                    }
+                p {
+                    color: var(--secondary-color-white);
                 }
 
-                h1,
-                p,i {
-                    color: var(--secondary-color-black);
+                button {
+                    background-color: var(--primary-color-lightBlue);
+                    border: none;
+
+                    &:hover {
+                        background-color: #80b8fb;
+                    }
                 }
             }
         }
