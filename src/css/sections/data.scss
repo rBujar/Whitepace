@@ -1,0 +1,24 @@
+.data{
+
+    .image{
+        margin-bottom: 100px;
+    }
+    
+    &__title{
+        h1,p{
+        color: var(--secondary-color-black);
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .data{
+        &__content{
+            order: 1;
+        }
+        .image{
+            order: 2;
+            margin-bottom: 0px;
+        }
+    }
+}
