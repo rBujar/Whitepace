@@ -8,7 +8,7 @@ hamburger.addEventListener("click", () => {
   document.body.classList.toggle("no-scroll");
 });
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper-plans", {
   spaceBetween: 32,
   initialSlide: 1,
   centeredSlides: true,
@@ -33,20 +33,20 @@ const swiperClient = new Swiper(".swiper-client", {
   initialSlide: 1,
   centeredSlides: true,
   autoHeight: true,
-  pagination: {
-    el: ".swiper-client .swiper-pagination",
-  },
   breakpoints: {
     0: {
       loop: true,
       slidesPerView: 1,
     },
     768: {
-      slidesPerView: 1.5,
+      slidesPerView: 2,
     },
     992: {
       slidesPerView: 3,
       centeredSlides: false,
     },
+  },
+  pagination: {
+    el: ".swiper-client .swiper-pagination",
   },
 });
