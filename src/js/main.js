@@ -1,5 +1,4 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs";
-
 const hamburger = document.querySelector(".header__hamburger");
 const headerMenu = document.querySelector(".header__menu");
 
@@ -25,6 +24,28 @@ const swiper = new Swiper(".swiper", {
     992: {
       slidesPerView: 3,
       slidesPerGroup: 3,
+      centeredSlides: false,
+    },
+  },
+});
+const swiperClient = new Swiper(".swiper-client", {
+  spaceBetween: 32,
+  initialSlide: 1,
+  centeredSlides: true,
+  autoHeight: true,
+  pagination: {
+    el: ".swiper-client .swiper-pagination",
+  },
+  breakpoints: {
+    0: {
+      loop: true,
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 1.5,
+    },
+    992: {
+      slidesPerView: 3,
       centeredSlides: false,
     },
   },

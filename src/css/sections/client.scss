@@ -1,0 +1,146 @@
+.client {
+    &__title {
+        color: var(--secondary-color-black);
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-color-lightBlue);
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        gap: 40px;
+        transition: background-color 0.2s ease-in-out;
+
+        p,
+        i {
+            transition: color 0.2s ease-in-out;
+        }
+    }
+
+    .swiper-slide-active .client__item {
+        background-color: transparent;
+        border: 1px solid var(--secondary-color-gold);
+
+        p,
+        i {
+            color: var(--primary-color-darkBlue);
+        }
+    }
+
+    &__quote {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid var(--secondary-color-black);
+
+        i {
+            font-size: 55px;
+
+            &::before {
+                margin: 0px;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__image {
+        width: 65px;
+        height: 65px;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pagination-container {
+        margin-top: 40px;
+
+        .swiper-pagination-bullet {
+            background-color: var(--primary-color-lightBlue);
+            opacity: 0.8;
+
+            &-active {
+                background-color: var(--primary-color-darkBlue);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .client {
+        &__quote {
+            i {
+                font-size: 75px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        &__image {
+            width: 75px;
+            height: 75px;
+        }
+
+        &__details {
+            .text-lg:first-child {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .client {
+        &__item {
+            padding: 60px 24px;
+        }
+
+        &__quote {
+            i {
+                font-size: 85px;
+            }
+        }
+
+        &__image {
+            min-width: 85px;
+            min-height: 85px;
+        }
+
+        &__info {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__details {
+            width: fit-content;
+
+            .text-lg:last-child {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .client {
+        &__image {
+            min-width: 95px;
+            min-height: 95px;
+        }
+    }
+}
