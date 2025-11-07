@@ -12,8 +12,6 @@
     }
 }
 
-@media (min-width: 768px) {}
-
 @media (min-width: 992px) {
     .management {
         &__item:nth-child(2) {
@@ -28,5 +26,3 @@
         }
     }
 }
-
-@media (min-width: 1200px) {}
