@@ -1,17 +1,20 @@
-.apps{
-    .content{
+.apps {
+    .content {
         margin-bottom: 0px;
         margin-top: 100px;
     }
 }
-@media (min-width: 992px){
-    .apps{
-        .img{
+
+@media (min-width: 992px) {
+    .apps {
+        .img {
             margin: 0px;
             justify-content: left;
         }
-        .content{
+
+        .content {
             justify-content: end;
+            padding-left: 22px;
         }
     }
 }

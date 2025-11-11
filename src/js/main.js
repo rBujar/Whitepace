@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs";
 
 const hamburger = document.querySelector(".header__hamburger");
-const headerMenu = document.querySelector(".header__menu");
+const headerMenu = document.querySelector(".header__container");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
@@ -54,11 +54,8 @@ const swiperClient = new Swiper(".swiper-client", {
   },
 });
 
-///AOS
 AOS.init({
   duration: 700,
   offset: 50,
   once: true,
-  // duration: 0,
-  // offset: 0,
-})
+});

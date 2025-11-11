@@ -4,6 +4,13 @@
     &__content {
         margin-bottom: 100px;
     }
+
+    .content__title {
+        p {
+            padding: 0px;
+            font-size: 18px;
+        }
+    }
 }
 
 .overlay {

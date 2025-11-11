@@ -4,9 +4,18 @@
     }
 
     &__title {
+
         h1,
         p {
             color: var(--secondary-color-black);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .data {
+        .img {
+            padding-right: 10px;
         }
     }
 }

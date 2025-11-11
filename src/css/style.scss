@@ -102,7 +102,7 @@ h1 {
     gap: 10px;
     transition: background-color 0.2s ease-in-out;
     padding: 20px 40px;
-    max-width: 200px;
+    max-width: 220px;
     justify-content: center;
 
     p {
@@ -117,7 +117,7 @@ h1 {
     &:hover {
         background-color: #80b8fb;
 
-        i{
+        i {
             transform: translateX(4px);
         }
     }
@@ -147,7 +147,7 @@ h1 {
         }
 
         p {
-            padding: 10px;
+            padding: 5px;
         }
     }
 }
@@ -158,8 +158,6 @@ h1 {
     justify-content: center;
     margin: 0 auto;
 }
-
-
 
 section {
     padding-top: 80px;
@@ -240,6 +238,10 @@ section {
 }
 
 @media (min-width: 1200px) {
+    body.no-scroll {
+        overflow: initial;
+    }
+
     .container {
         max-width: 1140px;
     }
