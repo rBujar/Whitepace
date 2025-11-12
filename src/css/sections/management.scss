@@ -1,10 +1,10 @@
 .management {
-
-    &__item{
-    margin-bottom: 100px;
+    &__item {
+        margin-bottom: 100px;
     }
 
     .content__title {
+
         h1,
         p {
             color: var(--secondary-color-black);
@@ -12,13 +12,13 @@
     }
 }
 
-@media (min-width: 768px){
-    .management{
-       .content__title{
-        p{
-            padding: 3px;
+@media (min-width: 768px) {
+    .management {
+        .content__title {
+            p {
+                padding: 3px;
+            }
         }
-       }
     }
 }
 
@@ -27,7 +27,6 @@
         &__item:nth-child(2) {
             .content {
                 order: 2;
-                padding-left: 20px;
             }
 
             .img {

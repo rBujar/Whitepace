@@ -140,7 +140,6 @@
             flex-direction: row;
             gap: 0px;
             justify-content: space-between;
-            padding: 10px;
         }
     }
 }
@@ -170,9 +169,10 @@
 
         .content {
             &__title {
+                gap: 15px;
+
                 h1 {
                     font-size: 28px;
-                    line-height: 36px;
                 }
 
                 p {
@@ -181,20 +181,32 @@
             }
 
             button {
-                width: 185px;
+                width: 200px;
                 height: auto;
             }
         }
 
+        &__menu {
+            gap: 30px;
+        }
+
         &__details {
             border-bottom: none;
-            padding-top: 32px;
+            padding: 32px 0px 0px;
             width: initial;
             gap: 60px;
+
+            .icon-globe::before {
+                margin: 0px;
+            }
         }
 
         &__socials {
             margin-top: 28px;
+
+            .icon-linkedin::before {
+                margin: 0px;
+            }
         }
     }
 }

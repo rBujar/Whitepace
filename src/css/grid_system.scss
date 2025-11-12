@@ -1,14 +1,9 @@
-$row-gutter: 20px;
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-#{$row-gutter} / 2);
-    margin-right: calc(-#{$row-gutter} / 2);
 
     .col {
         flex: 1;
-        padding-left: calc(#{$row-gutter} / 2);
-        padding-right: calc(#{$row-gutter} / 2);
     }
 
     @for $size from 1 through 12 {
@@ -16,6 +11,7 @@ $row-gutter: 20px;
             width: calc($size / 12 * 100%);
         }
     }
+
     @for $size from 1 through 12 {
         .offset-#{$size} {
             margin-left: calc($size / 12 * 100%);

@@ -13,99 +13,51 @@
 <body>
   <div class="default-bg">
     <header class="header container">
-      <div class="row">
         <div class="header__logo">
           <img src="src/assets/whitespace.png" alt="whitespace logo" />
         </div>
         <nav class="header__nav">
-          <div class="header__container">
           <ul class="header__menu">
             <li class="header__item">
-              <a href="#" class="text-lg text-medium">Products
-                <i class="icon-anchor-down"></i>
-                <ul class="header__submenu">
-                  <li class="header__submenu-item">
-                    <a href="#" class="text-md text-regular">Product 1</a>
-                  </li>
-                  <li class="header__submenu-item">
-                    <a href="#" class="text-md text-regular">Product 2</a>
-                  </li>
-                  <li class="header__submenu-item">
-                    <a href="#" class="text-md text-regular">Product 3</a>
-                  </li>
-                </ul>
+              <a href="#product" class="text-lg text-medium">Products
+                <i class="icon-anchor-down"></i></a>
             </li>
             <li class="header__item">
-              <a href="#" class="text-lg text-medium">Solutions
-                <i class="icon-anchor-down"></i>
-                <ul class="header__submenu">
-                  <li class="header__submenu-item">
-                    <a href="#" class="text-md text-regular">Solution 1</a>
-                  </li>
-                  <li class="header__submenu-item">
-                    <a href="#" class="text-md text-regular">Solution 2</a>
-                  </li>
-                  <li class="header__submenu-item">
-                    <a href="#" class="text-md text-regular">Solution 3</a>
-                  </li>
-                </ul>
+              <a href="#apps" class="text-lg text-medium">Solutions
+                <i class="icon-anchor-down"></i></a>
             </li>
             <li class="header__item">
-              <a href="#" class="text-lg text-medium">Resources
-                <i class="icon-anchor-down"></i>
-                <ul class="header__submenu">
-                  <li class="header__submenu-item">
-                    <a href="#" class="text-md text-regular">Resource 1</a>
-                  </li>
-                  <li class="header__submenu-item">
-                    <a href="#" class="text-md text-regular">Resource 2</a>
-                  </li>
-                  <li class="header__submenu-item">
-                    <a href="#" class="text-md text-regular">Resource 3</a>
-                  </li>
-                </ul>
+              <a href="#plan" class="text-lg text-medium">Pricing
+                <i class="icon-anchor-down"></i></a>
             </li>
             <li class="header__item">
-              <a href="#" class="text-lg text-medium">Pricing
-                <i class="icon-anchor-down"></i>
-                <ul class="header__submenu">
-                  <li class="header__submenu-item">
-                    <a href="#" class="text-md text-regular">Pricing 1</a>
-                  </li>
-                  <li class="header__submenu-item">
-                    <a href="#" class="text-md text-regular">Pricing 2</a>
-                  </li>
-                  <li class="header__submenu-item">
-                    <a href="#" class="text-md text-regular">Pricing 3</a>
-                  </li>
-                </ul>
+              <a href="#client" class="text-lg text-medium">Clients
+                <i class="icon-anchor-down"></i></a>
             </li>
           </ul>
-        </div>
           <div class="header__buttons">
             <button class="header__buttons--login">
               <p class="text-lg text-medium">Login</p>
             </button>
-            <button class="header__buttons--free-trial button-blue">
-              <p class="text-lg text-medium">Try Whitespace Free</p>
+            <button class="button-blue header__buttons--free-trial">
+              <p class="text-lg text-medium">Try Whitespace</p>
               <i class="icon-right"></i>
             </button>
           </div>
-          <div class="header__hamburger">
-            <span class="header__hamburger--bar header__hamburger--bar--top"></span>
-            <span class="header__hamburger--bar header__hamburger--bar--middle"></span>
-            <span class="header__hamburger--bar header__hamburger--bar--bottom"></span>
-          </div>
-      </div>
-      </nav>
-
+       
+        </nav>
+        <div class="header__hamburger">
+          <span class="header__hamburger--bar header__hamburger--bar--top"></span>
+          <span class="header__hamburger--bar header__hamburger--bar--middle"></span>
+          <span class="header__hamburger--bar header__hamburger--bar--bottom"></span>
+        </div>
     </header>
   </div>
   <main>
     <div class="default-bg overlay">
       <section class="hero container">
         <div class="row">
-          <div class="hero__content content col-12 col-md-12 col-lg-7 col-xl-5" data-aos="fade" data-aos-delay="100">
+          <div class="hero__content content col-12 col-md-12 col-lg-7 col-xl-6" data-aos="fade" data-aos-delay="100">
             <div class="content__title">
               <h1>Get more done with whitepace</h1>
               <p class="text-lg text-regular">
@@ -118,13 +70,13 @@
               <i class="icon-right"></i>
             </button>
           </div>
-          <div class="hero__image img col-11 col-md-11 col-lg-5 col-xl-7" data-aos="fade" data-aos-delay="150">
+          <div class="hero__image img col-11 col-md-11 col-lg-5 col-xl-6" data-aos="fade" data-aos-delay="150">
             <img src="./src/assets/hero.jpeg" alt="hero" />
           </div>
         </div>
       </section>
     </div>
-    <section class="management container">
+    <section id="product" class="management container">
       <div class="management__item">
         <div class="row">
           <div class="content col-12 col-lg-6 col-xl-6" data-aos="fade" data-aos-delay="100">
@@ -145,7 +97,7 @@
       </div>
       <div class="management__item">
         <div class="row">
-          <div class="content col-12 col-lg-7 col-xl-5 offset-xl-2" data-aos="fade" data-aos-delay="100">
+          <div class="content col-12 col-lg-7 col-xl-5 offset-xl-1" data-aos="fade" data-aos-delay="100">
             <div class="content__title">
               <h1>Work together</h1>
               <p class="text-lg text-regular">With whitepace, share your notes with your colleagues and collaborate on
@@ -156,7 +108,7 @@
               <p class="text-lg text-regular">Try it now</p> <i class="icon-right"></i>
             </button>
           </div>
-          <div class="img col-11 col-md-11 col-lg-5 col-xl-5" data-aos="fade" data-aos-delay="150">
+          <div class="img col-11 col-md-11 col-lg-5 col-xl-6" data-aos="fade" data-aos-delay="150">
             <img src="./src/assets/planetary-people.png" alt="planetary people image">
           </div>
         </div>
@@ -186,7 +138,7 @@
         <div class="img col-10 col-md-11 col-lg-6 col-xl-6" data-aos="fade" data-aos-delay="100">
           <img src="./src/assets/settings.png" alt="settings img">
         </div>
-        <div class="content col-12 col-md-12 col-lg-5 col-xl-5 offset-xl-1" data-aos="fade" data-aos-delay="150">
+        <div class="content col-12 col-md-12 col-lg-5ß col-xl-5 offset-xl-1" data-aos="fade" data-aos-delay="150">
           <div class="content__title">
             <h1>Costumise it to your needs</h1>
             <p class="text-lg text-regular">Customise the app with plugins, custom themes and multiple text editors
@@ -198,7 +150,7 @@
         </div>
       </div>
     </section>
-    <section class="plan container">
+    <section id="plan" class="plan container">
       <div class="row">
         <div class="plan__title col-12" data-aos="fade" data-aos-delay="100">
           <h1>Choose Your Plan</h1>
@@ -348,7 +300,7 @@
         </div>
       </div>
     </section>
-    <div class="default-bg">
+    <div id="apps" class="default-bg">
       <section class="apps container">
         <div class="row">
           <div class="img col-11 col-md-10 col-lg-6" data-aos="fade" data-aos-delay="100">
@@ -367,7 +319,7 @@
         </div>
       </section>
     </div>
-    <section class="client container">
+    <section id="client" class="client container">
       <div class="row">
         <h1 class="client__title col-12" data-aos="fade" data-aos-delay="100">What Our Clients Say</h1>
         <div class="swiper swiper-client" data-aos="fade" data-aos-delay="150">
@@ -460,7 +412,6 @@
   </main>
   <div class="default-bg">
   <footer class="footer container">
-    <div class="row">
     <div class="footer__item">
     <div class="footer__title">
       <img src="./src/assets/whitespace.png" alt="logo">
@@ -520,7 +471,6 @@
       <i class="icon-linkedin"></i>
     </div>
   </div>
-</div>
   </footer>
 </div>
   <script type="module" src="/src/js/main.js"></script>

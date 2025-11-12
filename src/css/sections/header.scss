@@ -1,14 +1,11 @@
 .header {
+    display: flex;
+    justify-content: space-between;
     padding-top: 20px;
-
-    .row {
-        justify-content: space-between;
-    }
 
     &__logo {
         width: 134px;
         height: auto;
-        padding-left: 10px;
     }
 
     &__hamburger {
@@ -46,12 +43,13 @@
     }
 
     ul {
-        padding-inline-start: 0px;
+        padding: 0px;
     }
 
-    &__container {
+    &__nav {
         position: fixed;
         display: flex;
+        flex-direction: column;
         z-index: 2;
         width: 100%;
         background-color: var(--primary-color-darkBlue);
@@ -59,7 +57,8 @@
         right: 0;
         transform: translateX(100%);
         height: 100%;
-        transition: transform 0.4s ease-in-out, opacity 0.3s ease;
+        gap: 30px;
+        transition: transform 0.4s ease-in-out;
 
         &.active {
             transform: translateX(0);
@@ -70,26 +69,12 @@
     &__menu {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        width: 100%;
-        text-align: start;
-        padding-top: 20px;
-        margin: 0 auto;
-        z-index: 2;
+        align-items: center;
+        gap: 8px;
     }
 
     &__item {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
         padding: 15px;
-        border: none;
-        outline: none;
-        width: 100%;
-
-        &:hover .header__submenu {
-            display: block;
-        }
 
         a {
             font-family: "DM Sans", sans-serif;
@@ -110,37 +95,45 @@
         }
     }
 
-    &__submenu {
-        display: none;
-        min-width: max-content;
-        width: 100%;
-        border-radius: 0 0 10px 10px;
+    &__buttons {
+        display: flex;
         align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        padding-right: 0px;
+        justify-content: space-between;
 
-        &-item {
-            padding: 5px 10px;
-            cursor: pointer;
+        &--login {
+            border: 0;
+            outline: 0;
+            border-radius: 8px;
+            min-width: 180px;
+            padding: 15px 40px;
+            background-color: var(--secondary-color-gold);
+            color: var(--primary-color-darkBlue);
+            transition: background-color 0.2s ease-in-out;
+            margin-left: 15px;
 
-            a {
-                &:hover {
-                    color: rgb(141, 141, 141);
-                }
+            &:hover {
+                background-color: #fff1c5;
             }
         }
-    }
 
-    &__buttons {
-        display: none;
+        &--free-trial {
+            margin-right: 15px;
+        }
     }
 }
 
 @media (min-width: 576px) {
     .header {
-        &__menu {
-            max-width: 540px;
+        &__buttons {
+            justify-content: space-around;
+
+            &--login {
+                margin-left: 0px;
+            }
+
+            &--free-trial {
+                margin-right: 0px;
+            }
         }
     }
 }
@@ -149,12 +142,10 @@
     .header {
         &__menu {
             gap: 8px;
-            max-width: 720px;
         }
 
         &__logo {
             width: 190px;
-            padding-left: 10px;
         }
 
         &__item {
@@ -164,21 +155,13 @@
                 font-size: 24px;
             }
         }
-
-        &__submenu {
-            padding-top: 5px;
-
-            &-item {
-                a {
-                    font-size: 18px;
-                }
-            }
-        }
     }
 }
 
 @media (min-width: 992px) {
     .header {
+        align-items: center;
+
         &__hamburger {
             padding-right: 0px;
         }
@@ -188,123 +171,63 @@
         }
 
         &__nav {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             gap: 20px;
-        }
-
-        &__container {
             top: 115px;
-            width: 100%;
         }
 
-        &__menu {
-            max-width: 960px;
-        }
+        &__menu {}
 
         &__item {
             padding-left: 5px;
-        }
-
-        &__buttons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 24px;
-
-            &--login {
-                border: 0;
-                outline: 0;
-                border-radius: 8px;
-                max-width: 130px;
-                padding: 15px 40px;
-                background-color: var(--secondary-color-gold);
-                color: var(--primary-color-darkBlue);
-                transition: background-color 0.2s ease-in-out;
-
-                &:hover {
-                    background-color: #fff1c5;
-                }
-            }
-
-            &--free-trial {
-                max-width: 227px;
-                padding: 15px 24px;
-            }
         }
     }
 }
 
 @media (min-width: 1200px) {
     .header {
-        &__logo {
-            padding-left: 2px;
-        }
-
         &__hamburger {
             display: none;
         }
 
         &__menu {
             flex-direction: row;
-            gap: 5px;
-            background-color: transparent;
-            height: initial;
+            justify-content: center;
             width: 100%;
-            padding-top: 0px;
-            top: unset;
-            transform: none;
+            margin-left: 10px;
         }
 
-        &__container {
+        &__nav {
             position: static;
-            width: fit-content;
-            height: fit-content;
-            padding-right: unset;
-            padding-left: unset;
-            margin-right: unset;
-            margin-left: unset;
             transform: none;
             transition: none;
+            height: initial;
+            flex-direction: row;
+            align-items: center;
+            gap: 0px;
+            justify-content: space-between;
+            padding-top: 0px;
         }
 
         &__item {
-            padding: 10px;
-            position: relative;
 
-            &:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-            }
+            a,
+            i {
+                font-size: 16px;
+                transition: color 0.3s ease-in-out;
 
-            img {
-                padding: 10px;
-            }
-
-            >a {
-                font-size: 18px;
-                gap: 10px;
-                border-radius: 5px;
+                &:hover {
+                    color: var(--secondary-color-gold);
+                }
             }
         }
 
-        &__submenu {
-            padding: 10px 20px;
-            font-size: 16px;
-            position: absolute;
-            left: 0;
-            top: 100%;
-            background: white;
-            width: 100%;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            border-radius: 0 0 10px 10px;
+        &__buttons {
+            justify-content: space-between;
+            gap: 24px;
 
-            &-item {
-                padding: 5px;
-
-                a {
-                    color: var(--primary-color-darkBlue);
-                }
+            &--login {
+                min-width: initial;
+                max-width: 130px;
             }
         }
     }

@@ -51,7 +51,7 @@ body.no-scroll {
 
 h1 {
     font-size: 36px;
-    line-height: auto;
+    line-height: normal;
     font-weight: 700;
 }
 
@@ -101,7 +101,7 @@ h1 {
     align-items: center;
     gap: 10px;
     transition: background-color 0.2s ease-in-out;
-    padding: 20px 40px;
+    padding: 15px 20px;
     max-width: 220px;
     justify-content: center;
 
@@ -238,10 +238,6 @@ section {
 }
 
 @media (min-width: 1200px) {
-    body.no-scroll {
-        overflow: initial;
-    }
-
     .container {
         max-width: 1140px;
     }
