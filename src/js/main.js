@@ -4,7 +4,7 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs
 
 const hamburger = document.querySelector(".header__hamburger");
 const headerMenu = document.querySelector(".header__nav");
-const menuItem = document.querySelector(".header__item");
+const menuItem = document.querySelectorAll(".header__item");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
