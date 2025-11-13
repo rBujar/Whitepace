@@ -1,4 +1,4 @@
-.header-bg{
+.header-bg {
     background-color: var(--primary-color-darkBlue);
     position: fixed;
     left: 0;
@@ -70,6 +70,7 @@
         height: 100%;
         gap: 30px;
         transition: transform 0.4s ease-in-out;
+        padding-top: 20px;
 
         &.active {
             transform: translateX(0);
@@ -80,7 +81,7 @@
     &__menu {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         gap: 8px;
     }
 
@@ -108,8 +109,10 @@
 
     &__buttons {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: start;
+        gap: 25px;
+        padding-left: 15px;
 
         &--login {
             border: 0;
@@ -120,15 +123,10 @@
             background-color: var(--secondary-color-gold);
             color: var(--primary-color-darkBlue);
             transition: background-color 0.2s ease-in-out;
-            margin-left: 15px;
 
             &:hover {
                 background-color: #fff1c5;
             }
-        }
-
-        &--free-trial {
-            margin-right: 15px;
         }
     }
 }
@@ -161,8 +159,6 @@
         }
 
         &__item {
-            padding: 15px;
-
             >a {
                 font-size: 24px;
             }
@@ -185,10 +181,6 @@
         &__nav {
             gap: 20px;
             top: 115px;
-        }
-
-        &__item {
-            padding-left: 5px;
         }
     }
 }
@@ -232,9 +224,11 @@
         }
 
         &__buttons {
+            flex-direction: row;
             justify-content: space-between;
             gap: 24px;
             padding-bottom: 10px;
+            padding-left: 0px;
 
             &--login {
                 min-width: initial;

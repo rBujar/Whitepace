@@ -21,7 +21,7 @@ menuItem.forEach((item) => {
       document.body.classList.toggle("no-scroll");
     }
   });
-}) 
+});
 
 const swiper = new Swiper(".swiper-plans", {
   spaceBetween: 32,
@@ -81,3 +81,19 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+const container = document.querySelector(".header.container");
+
+function getLeftSide() {
+  let marginLeft = container.getBoundingClientRect().left;
+
+  console.log(marginLeft + "px");
+
+  if (window.innerWidth < 1200) {
+    headerMenu.style.paddingLeft = `${marginLeft}px`;
+  }
+}
+
+getLeftSide();
+
+window.addEventListener("resize", getLeftSide);

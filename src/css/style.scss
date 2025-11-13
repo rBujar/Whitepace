@@ -49,6 +49,20 @@ body.no-scroll {
     background-color: var(--primary-color-darkBlue);
 }
 
+.overlay {
+    background-image: url(/src/assets/background-waves.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.round-waves {
+    background-image: url(/src/assets/circle-wave.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
 h1 {
     font-size: 36px;
     line-height: normal;
