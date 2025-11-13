@@ -187,8 +187,6 @@
             top: 115px;
         }
 
-        &__menu {}
-
         &__item {
             padding-left: 5px;
         }
@@ -236,6 +234,7 @@
         &__buttons {
             justify-content: space-between;
             gap: 24px;
+            padding-bottom: 10px;
 
             &--login {
                 min-width: initial;
