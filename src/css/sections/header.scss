@@ -1,17 +1,28 @@
+.header-bg{
+    background-color: var(--primary-color-darkBlue);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 4;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    align-items: center;
 
     &__logo {
         width: 134px;
         height: auto;
+        padding-top: 3px;
     }
 
     &__hamburger {
         display: block;
         cursor: pointer;
-        padding-right: 10px;
+        padding-bottom: 10px;
 
         &--bar {
             display: block;
@@ -50,7 +61,7 @@
         position: fixed;
         display: flex;
         flex-direction: column;
-        z-index: 2;
+        z-index: 5;
         width: 100%;
         background-color: var(--primary-color-darkBlue);
         top: 55px;
@@ -146,6 +157,7 @@
 
         &__logo {
             width: 190px;
+            padding-bottom: 10px;
         }
 
         &__item {
@@ -163,11 +175,11 @@
         align-items: center;
 
         &__hamburger {
-            padding-right: 0px;
+            padding-bottom: 0px;
         }
 
         &__logo {
-            padding: 30px 0px;
+            padding: 10px 0px;
         }
 
         &__nav {
