@@ -12,14 +12,16 @@ hamburger.addEventListener("click", () => {
   document.body.classList.toggle("no-scroll");
 });
 
-menuItem.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  headerMenu.classList.toggle("active");
-  headerMenu.style.transition = "transform 0.1s ease-out";
-  if (window.innerWidth < 1200) {
-    document.body.classList.toggle("no-scroll");
-  }
-});
+menuItem.forEach((item) => {
+  item.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    headerMenu.classList.toggle("active");
+    headerMenu.style.transition = "transform 0.1s ease-out";
+    if (window.innerWidth < 1200) {
+      document.body.classList.toggle("no-scroll");
+    }
+  });
+}) 
 
 const swiper = new Swiper(".swiper-plans", {
   spaceBetween: 32,
