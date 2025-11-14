@@ -49,9 +49,23 @@ body.no-scroll {
     background-color: var(--primary-color-darkBlue);
 }
 
+.overlay {
+    background-image: url(/src/assets/background-waves.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.round-waves {
+    background-image: url(/src/assets/circle-wave.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
 h1 {
     font-size: 36px;
-    line-height: auto;
+    line-height: normal;
     font-weight: 700;
 }
 
@@ -101,8 +115,8 @@ h1 {
     align-items: center;
     gap: 10px;
     transition: background-color 0.2s ease-in-out;
-    padding: 20px 40px;
-    max-width: 200px;
+    padding: 15px 20px;
+    max-width: 220px;
     justify-content: center;
 
     p {
@@ -117,7 +131,7 @@ h1 {
     &:hover {
         background-color: #80b8fb;
 
-        i{
+        i {
             transform: translateX(4px);
         }
     }
@@ -147,7 +161,7 @@ h1 {
         }
 
         p {
-            padding: 10px;
+            padding: 5px;
         }
     }
 }
@@ -158,8 +172,6 @@ h1 {
     justify-content: center;
     margin: 0 auto;
 }
-
-
 
 section {
     padding-top: 80px;
