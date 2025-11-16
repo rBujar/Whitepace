@@ -1,0 +1,36 @@
+.navigation{
+    button{
+        background-color: var(--primary-color-lightBlue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        position: fixed;
+        cursor: pointer;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 10px;
+        transform: translateX(-50%);
+        transition: background-color 0.3s ease-in-out, border 0.1s ease-in-out;
+    
+        &:hover{
+            background-color: var(--secondary-color-white);
+            border: 2px solid var(--secondary-color-gold);
+
+            i{
+                color: var(--primary-color-lightBlue);
+            }
+        }
+
+        i{
+            &::before{
+                transform: rotate(180deg);
+            }
+
+        }
+    }
+}
