@@ -34,10 +34,10 @@
     --secondary-color-black: #212529;
 }
 
-@mixin waves($background-repeat: no-repeat, $background-position: center, $background-size: contain) {
-    background-repeat: $background-repeat;
-    background-position: $background-position;
-    background-size: $background-size;
+@mixin waves($bg-repeat: no-repeat, $bg-position: center, $bg-size: contain) {
+    background-repeat: $bg-repeat;
+    background-position: $bg-position;
+    background-size: $bg-size;
 }
 
 a {
@@ -63,7 +63,7 @@ body.no-scroll {
 
 .round-waves {
     background-image: url(/src/assets/circle-wave.png);
-    @include waves($background-position: left);
+    @include waves($bg-position: left);
 }
 
 h1 {
