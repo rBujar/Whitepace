@@ -1,5 +1,4 @@
-.navigation{
-    button{
+.scrollUp{
         background-color: var(--primary-color-lightBlue);
         display: flex;
         align-items: center;
@@ -11,19 +10,12 @@
         height: 35px;
         position: fixed;
         cursor: pointer;
-        right: 0;
-        bottom: 0;
-        margin-bottom: 10px;
-        transform: translateX(-50%);
-        transition: background-color 0.3s ease-in-out, border 0.1s ease-in-out;
+        right: 15px;
+        bottom: 10px;
+        transition: background-color 0.3s ease-in-out;
     
         &:hover{
-            background-color: var(--secondary-color-white);
-            border: 2px solid var(--secondary-color-gold);
-
-            i{
-                color: var(--primary-color-lightBlue);
-            }
+            background-color: #80b8fb;;
         }
 
         i{
@@ -33,4 +25,4 @@
 
         }
     }
-}
+

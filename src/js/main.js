@@ -98,7 +98,7 @@ getLeftSide();
 
 window.addEventListener("resize", getLeftSide);
 
-const scrollButton = document.querySelector('.navigation__button')
+const scrollButton = document.querySelector('.scrollUp')
 
 window.onscroll = function() {scrollFunction()}
 
