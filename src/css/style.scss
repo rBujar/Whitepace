@@ -34,6 +34,12 @@
     --secondary-color-black: #212529;
 }
 
+@mixin waves($background-repeat: no-repeat, $background-position: center, $background-size: contain) {
+    background-repeat: $background-repeat;
+    background-position: $background-position;
+    background-size: $background-size;
+}
+
 a {
     text-decoration: none;
 }
@@ -50,18 +56,14 @@ body.no-scroll {
     background-color: var(--primary-color-darkBlue);
 }
 
-.overlay {
+.big-waves {
     background-image: url(/src/assets/background-waves.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    @include waves();
 }
 
 .round-waves {
     background-image: url(/src/assets/circle-wave.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
+    @include waves($background-position: left);
 }
 
 h1 {
