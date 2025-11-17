@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'whitepace';
   src: url('../assets/font/whitepace.eot');
-  src: url('..//assets/font/whitepace.eot') format('embedded-opentype'),
+  src: url('../assets/font/whitepace.eot') format('embedded-opentype'),
        url('../assets/font/whitepace.woff2') format('woff2'),
        url('../assets/font/whitepace.woff') format('woff'),
        url('../assets/font/whitepace.ttf') format('truetype'),
