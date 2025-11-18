@@ -3,7 +3,7 @@
   src: url('../assets/font/whitepace.eot');
   src: url('../assets/font/whitepace.eot') format('embedded-opentype'),
        url('../assets/font/whitepace.woff2') format('woff2'),
-       url('../assets//font/whitepace.woff') format('woff'),
+       url('../assets/font/whitepace.woff') format('woff'),
        url('../assets/font/whitepace.ttf') format('truetype'),
        url('../assets/font/whitepace.svg') format('svg');
   font-weight: normal;
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'whitepace';
-    src: url('../font/whitepace.svg?59083894#whitepace') format('svg');
+    src: url('../font/whitepace.svg?54593146#whitepace') format('svg');
   }
 }
 */
@@ -59,9 +59,10 @@
 .icon-anchor-down:before { content: '\e802'; } /* '' */
 .icon-android:before { content: '\e803'; } /* '' */
 .icon-globe:before { content: '\e804'; } /* '' */
+.icon-quote:before { content: '\e805'; } /* '' */
+.icon-anchor-up:before { content: '\e806'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
 .icon-apple:before { content: '\f179'; } /* '' */
 .icon-windows:before { content: '\f17a'; } /* '' */
-.icon-quote:before { content: '\e805'; } /* '' */

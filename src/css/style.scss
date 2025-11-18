@@ -14,6 +14,7 @@
 @import url("./sections/apps.scss");
 @import url("./sections/team.scss");
 @import url("./sections/footer.scss");
+@import url("./sections/scrollUp.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -33,6 +34,12 @@
     --secondary-color-black: #212529;
 }
 
+@mixin waves($bg-repeat: no-repeat, $bg-position: center, $bg-size: contain) {
+    background-repeat: $bg-repeat;
+    background-position: $bg-position;
+    background-size: $bg-size;
+}
+
 a {
     text-decoration: none;
 }
@@ -49,9 +56,19 @@ body.no-scroll {
     background-color: var(--primary-color-darkBlue);
 }
 
+.big-waves {
+    background-image: url(/src/assets/background-waves.png);
+    @include waves();
+}
+
+.round-waves {
+    background-image: url(/src/assets/circle-wave.png);
+    @include waves($bg-position: left);
+}
+
 h1 {
     font-size: 36px;
-    line-height: auto;
+    line-height: normal;
     font-weight: 700;
 }
 
@@ -101,8 +118,8 @@ h1 {
     align-items: center;
     gap: 10px;
     transition: background-color 0.2s ease-in-out;
-    padding: 20px 40px;
-    max-width: 200px;
+    padding: 15px 20px;
+    max-width: 220px;
     justify-content: center;
 
     p {
@@ -117,7 +134,7 @@ h1 {
     &:hover {
         background-color: #80b8fb;
 
-        i{
+        i {
             transform: translateX(4px);
         }
     }
@@ -147,7 +164,7 @@ h1 {
         }
 
         p {
-            padding: 10px;
+            padding: 5px;
         }
     }
 }
@@ -158,8 +175,6 @@ h1 {
     justify-content: center;
     margin: 0 auto;
 }
-
-
 
 section {
     padding-top: 80px;

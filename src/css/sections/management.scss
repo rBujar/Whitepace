@@ -1,13 +1,23 @@
 .management {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+    &__item {
+        margin-bottom: 100px;
+    }
 
     .content__title {
 
         h1,
         p {
             color: var(--secondary-color-black);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .management {
+        .content__title {
+            p {
+                padding: 3px;
+            }
         }
     }
 }

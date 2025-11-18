@@ -1,0 +1,21 @@
+.scrollUp{
+        background-color: var(--primary-color-lightBlue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        position: fixed;
+        cursor: pointer;
+        right: 15px;
+        bottom: 10px;
+        transition: background-color 0.3s ease-in-out;
+    
+        &:hover{
+            background-color: #80b8fb;;
+        }
+    }
+
