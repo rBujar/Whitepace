@@ -147,15 +147,12 @@ h1 {
     margin-bottom: 60px;
 
     &__title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 24px;
         margin-bottom: 60px;
         color: var(--secondary-color-white);
 
         h1 {
             font-size: 36px;
+            margin-bottom: 25px;
         }
 
         h1,
